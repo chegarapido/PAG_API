@@ -1,0 +1,15 @@
+{
+    "require": {
+        "php": "^7.2.5 || ^8.0",
+        "guzzlehttp/guzzle": "^7.4.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Libs\\Crypt\\": "libs/Crypt",
+            "Libs\\Pagseguro\\": "libs/Pagseguro",
+            "Libs\\Pagseguro\\Exceptions\\": "libs/Pagseguro/Exceptions",
+            "Libs\\Http\\": "libs/Http",
+            "Libs\\Http\\Exceptions\\": "libs/Http/Exceptions"
+        }
+    }
+}
