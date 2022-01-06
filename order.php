@@ -93,8 +93,9 @@ if (count($validationResponse)) {
 }
 
 // Start pagseguro api
-$credentials = Crypt::undo()->fromString($GLOBALS['AUTHORIZATION']);
-$credentials = json_decode($credentials);
+// $credentials = Crypt::undo()->fromString($GLOBALS['AUTHORIZATION']);
+// $credentials = json_decode($credentials);
+$credentials = $request->credentials;
 
 $order = new Order($request->ambient, $credentials->client_id, $credentials->client_secret, $credentials->bearer);
 

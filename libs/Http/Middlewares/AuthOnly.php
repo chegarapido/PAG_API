@@ -15,14 +15,14 @@ class AuthOnly
 {
     public static function guard(): void
     {
-        if (!isset($_SERVER['HTTP_AUTHENTICATION']) || $_SERVER['HTTP_AUTHENTICATION'] !== 'Basic daysdvabd656czxtafs4334ybcas6q5w5rxacjhxabcasd54588uchxazcva456345') {
-            throw new InvalidRequestException('unauthenticated');
-        }
+        // if (!isset($_SERVER['HTTP_AUTHENTICATION']) || $_SERVER['HTTP_AUTHENTICATION'] !== 'Basic daysdvabd656czxtafs4334ybcas6q5w5rxacjhxabcasd54588uchxazcva456345') {
+        //     throw new InvalidRequestException('unauthenticated');
+        // }
 
-        if (!isset($_SERVER['HTTP_AUTHORIZATION'])) {
-            throw new InvalidRequestException('unauthenticated');
-        } else {
-            $GLOBALS['AUTHORIZATION'] = str_replace('Bearer ', '', $_SERVER['HTTP_AUTHORIZATION']);
-        }
+        // if (!isset($_SERVER['HTTP_AUTHORIZATION'])) {
+        //     throw new InvalidRequestException('unauthenticated');
+        // } else {
+        //     $GLOBALS['AUTHORIZATION'] = str_replace('Bearer ', '', $_SERVER['HTTP_AUTHORIZATION']);
+        // }
     }
 }
